@@ -1,3 +1,26 @@
+# ============================================================
+# ENTRY POINT: Run this file first -> python main.py
+# ============================================================
+# Required libraries (outside Python built-in):
+#   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
+#   pip install prophet lightgbm pmdarima scikit-learn
+#   pip install pandas numpy matplotlib plotly joblib
+#
+# This project uses:
+#   - GPU acceleration (NVIDIA CUDA) for LSTM training
+#   - matplotlib and plotly for graphics/visualisation
+#   - External libraries listed above
+#
+# NOTE FOR TUTOR:
+#   Model results are pre-computed and saved as .pkl files.
+#   Running main.py loads these saved results, prints the
+#   metrics table and saves interactive HTML charts.
+#   No retraining required to run main.py.
+#
+# Full setup and usage instructions: see README.md
+# GitHub: https://github.com/Rohit-222111/TS-Forecasting-Benchmark
+# ============================================================
+
 '''
 Multi-Model Time-Series Forecasting Benchmark
 ==============================================
