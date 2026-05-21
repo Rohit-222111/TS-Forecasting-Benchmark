@@ -1,5 +1,4 @@
 data/*.csv
-data/*.pkl
 checkpoints/
 __pycache__/
 .ipynb_checkpoints/
