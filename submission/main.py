@@ -1,6 +1,14 @@
 # ============================================================
-# ENTRY POINT: Run this file first -> python main.py
+# ENTRY POINT: python main.py
 # ============================================================
+# Run order (if running from scratch):
+#   1. 01_Data_Preprocessing.py  -- downloads M4 dataset
+#   2. 02_prophet_lgbm.py        -- trains Prophet and LightGBM
+#   3. 03_arima_lstm.py          -- trains ARIMA and LSTM (GPU)
+#   4. 04_ensemble_eval.py       -- builds ensemble, computes metrics
+#   5. 05_dashboard.py           -- generates HTML charts
+#   6. main.py                   -- loads results, prints metrics
+#
 # Required libraries (outside Python built-in):
 #   pip install torch torchvision --index-url https://download.pytorch.org/whl/cu128
 #   pip install prophet lightgbm pmdarima scikit-learn
@@ -8,16 +16,20 @@
 #
 # This project uses:
 #   - GPU acceleration (NVIDIA CUDA) for LSTM training
-#   - matplotlib and plotly for graphics/visualisation
+#   - plotly for interactive HTML chart generation
 #   - External libraries listed above
 #
 # NOTE FOR TUTOR:
-#   Model results are pre-computed and saved as .pkl files.
-#   Running main.py loads these saved results, prints the
-#   metrics table and saves interactive HTML charts.
-#   No retraining required to run main.py.
+#   Pre-computed model results (.pkl files) are available at:
+#   https://github.com/Rohit-222111/TS-Forecasting-Benchmark
+#   Download the data/ folder from GitHub and place it in the
+#   project root before running main.py directly.
+#   Alternatively run scripts 01-05 in order to regenerate.
 #
-# Full setup and usage instructions: see README.md
+#   Dataset is downloaded automatically by 01_Data_Preprocessing.py
+#   from the official M4 Competition GitHub repository.
+#   No manual dataset download required.
+#
 # GitHub: https://github.com/Rohit-222111/TS-Forecasting-Benchmark
 # ============================================================
 
