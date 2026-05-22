@@ -195,6 +195,8 @@ never crash the pipeline.
 
 ## Expected Output of main.py
 
+## Expected Output of main.py
+
 ```
 Loading data and model results...
 Loaded 5 models: ['Prophet', 'LightGBM', 'ARIMA', 'LSTM', 'Ensemble']
@@ -202,14 +204,13 @@ Loaded 5 models: ['Prophet', 'LightGBM', 'ARIMA', 'LSTM', 'Ensemble']
 Evaluating models...
 
 === Benchmark Results ===
-
-| Model    | RMSE    | Coverage | Sharpness |
-|----------|---------|----------|-----------|
-| Prophet  | 1434.59 | 0.5916   | 1393.17   |
-| LightGBM | 1095.98 | 0.5992   | 1614.77   |
-| ARIMA    | 948.59  | 0.8969   | 1793.93   |
-| LSTM     | 1138.40 | 0.9062   | 2420.92   |
-| Ensemble | 959.87  | 0.8181   | 1408.66   |
+           RMSE  Coverage  Sharpness
+Model                               
+Prophet   1434.59    0.5916    1393.17
+LightGBM  1095.98    0.5992    1614.77
+ARIMA      948.59    0.8969    1793.93
+LSTM      1138.40    0.9062    2420.92
+Ensemble   959.87    0.8181    1408.66
 
 Metrics saved to data/metrics_final.csv
 All charts saved to charts/
