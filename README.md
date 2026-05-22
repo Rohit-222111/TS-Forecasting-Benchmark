@@ -195,8 +195,6 @@ never crash the pipeline.
 
 ## Expected Output of main.py
 
-## Expected Output of main.py
-
 ```
 Loading data and model results...
 Loaded 5 models: ['Prophet', 'LightGBM', 'ARIMA', 'LSTM', 'Ensemble']
